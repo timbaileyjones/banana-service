@@ -8,7 +8,7 @@ service:
   pathPatterns:
   - /bananas
   schedules:
-    - expression: cron('* * * * ? *')
+    - expression: cron(* * * * ? *)
       command: echo updating bananas
   pipeline:
     source:
