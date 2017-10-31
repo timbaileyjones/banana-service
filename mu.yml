@@ -3,13 +3,17 @@ environments:
 - name: acceptance
 - name: production
 service:
-  name: banana-service
+  name: timba-mu-bananas
   port: 8080
   pathPatterns:
   - /bananas
+  schedules:
+    - expression: '* * * * *'
+      command: echo updating bananas
   pipeline:
     source:
       provider: GitHub
       repo: timbaileyjones/banana-service
+      branch: master
     build:
       image: aws/codebuild/java:openjdk-8
