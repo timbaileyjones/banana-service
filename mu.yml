@@ -3,7 +3,7 @@ environments:
 - name: acceptance
 - name: production
 service:
-  name: timba-mu-bananas
+  name: mu-banana-timba
   port: 8080
   pathPatterns:
   - /bananas
