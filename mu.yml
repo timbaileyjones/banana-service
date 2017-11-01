@@ -8,8 +8,12 @@ service:
   pathPatterns:
   - /bananas
   schedules:
-    - expression: cron(* * * * ? *)
-      command: echo updating bananas
+    - name: minutely
+      expression: cron(* * * * ? *)
+      command: echo updating bananas every minute
+    - name: hourly
+      expression: cron(0 * * * ? *)
+      command: echo updating bananas every hour
   pipeline:
     source:
       provider: GitHub
