@@ -1,10 +1,13 @@
+---
 namespace: timba
 environments:
 - name: acceptance
+  provider: ecs
   cluster:
     maxSize: 1
     keyName: timbaileyjones-labs-keypair
 - name: production
+  provider: ecs
   cluster:
     maxSize: 1
     keyName: timbaileyjones-labs-keypair
@@ -14,12 +17,12 @@ service:
   pathPatterns:
   - /bananas
   schedules:
-    - name: minutely
-      expression: cron(* * * * ? *)
-      command: curl http://timjones.com/minute-cron
-    - name: hourly
-      expression: cron(0 * * * ? *)
-      command: curl http://timjones.com/hour-cron
+  - name: Minutely
+    expression: cron(* * * * ? *)
+    command: curl http://timjones.com/minute-cron
+  - name: Hourly
+    expression: cron(0 * * * ? *)
+    command: curl http://timjones.com/hour-cron
   pipeline:
     source:
       provider: GitHub
