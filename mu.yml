@@ -1,5 +1,5 @@
 ---
-namespace: timba
+namespace: timba2
 environments:
 - name: acceptance
   provider: ecs
