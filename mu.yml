@@ -19,10 +19,10 @@ service:
   schedules:
   - name: Minutely
     expression: cron(* * * * ? *)
-    command: curl http://timjones.com/minute-cron
+    command: ['curl','http://timjones.com/minute-cron']
   - name: Hourly
     expression: cron(0 * * * ? *)
-    command: curl http://timjones.com/hour-cron
+    command: ['curl','http://timjones.com/hour-cron']
   pipeline:
     source:
       provider: GitHub
