@@ -1,5 +1,5 @@
 ---
-namespace: timba2
+namespace: mu-${env:LOGNAME}
 environments:
 - name: acceptance
   provider: ecs
