@@ -1,5 +1,5 @@
 ---
-namespace: mu-${env:LOGNAME}
+namespace: mu-tim
 environments:
 - name: acceptance
   provider: ecs
