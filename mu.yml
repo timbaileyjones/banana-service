@@ -5,7 +5,7 @@ environments:
   provider: ecs
   cluster:
     maxSize: 1
-    keyName: timbaileyjones-labs-keypair
+    keyName: timbaileyjones-labs-keypair-ireland
 - name: production
   provider: ecs
   cluster:
