@@ -10,7 +10,7 @@ environments:
   provider: ecs
   cluster:
     maxSize: 1
-    keyName: timbaileyjones-labs-keypair
+    keyName: timbaileyjones-labs-keypair-ireland
 service:
   name: mu-banana
   port: 8080
