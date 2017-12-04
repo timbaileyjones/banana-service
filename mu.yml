@@ -16,13 +16,13 @@ service:
   port: 8080
   pathPatterns:
   - /bananas
-  schedules:
-  - name: Minutely
-    expression: cron(* * * * ? *)
-    command: ['curl','http://timjones.com/minute-cron']
-  - name: Hourly
-    expression: cron(0 * * * ? *)
-    command: ['curl','http://timjones.com/hour-cron']
+#schedules:
+#  - name: Minutely
+#    expression: cron(* * * * ? *)
+#    command: ['curl','http://timjones.com/minute-cron']
+#  - name: Hourly
+#    expression: cron(0 * * * ? *)
+#    command: ['curl','http://timjones.com/hour-cron']
   pipeline:
     source:
       provider: GitHub
