@@ -6,6 +6,8 @@ environments:
   cluster:
     maxSize: 1
     keyName: timbaileyjones-labs-keypair-ireland
+  load-balancer: 
+    name: test-elb
   discovery:
     provider: consul
 - name: production
