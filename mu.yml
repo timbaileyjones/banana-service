@@ -6,11 +6,15 @@ environments:
   cluster:
     maxSize: 1
     keyName: timbaileyjones-labs-keypair-ireland
+  discovery:
+    provider: consul
 - name: production
   provider: ecs
   cluster:
     maxSize: 1
     keyName: timbaileyjones-labs-keypair-ireland
+  discovery:
+    provider: consul
 service:
   name: mu-banana
   port: 8080
