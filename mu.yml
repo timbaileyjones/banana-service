@@ -1,5 +1,5 @@
 ---
-namespace: mu-tim
+namespace: mu-tim2
 environments:
 - name: acceptance
   provider: ecs
