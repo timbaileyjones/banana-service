@@ -1,13 +1,13 @@
 ---
-namespace: mu-tim2
+namespace: mu-tim3
 environments:
 - name: acceptance
   provider: ecs
   cluster:
     maxSize: 1
     keyName: timbaileyjones-labs-keypair-ireland
-  load-balancer: 
-    name: test-elb
+  #load-balancer: 
+    #name: test-elb
   discovery:
     provider: consul
 - name: production
